@@ -17,7 +17,7 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["http://localhost:3000", "https://post-it-server-ochre.vercel.app/"], //to change with hosting url
+    origin: ["http://localhost:3000", "https://post-it-jt47.onrender.com/","https://nullhawk.github.io/post-it/"], //to change with hosting url
   },
 });
 
