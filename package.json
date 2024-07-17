@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "engines": {
-    "node": "20.x"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "start": "npm run server"
+    "start": "nodemon server.js"
   },
   "author": "nullHawk",
   "license": "ISC",
@@ -24,6 +21,7 @@
     "mongoose": "^6.3.2",
     "nodemon": "^2.0.16",
     "socket.io": "^4.5.1",
-    "validator": "^13.7.0"
+    "validator": "^13.7.0",
+    "vercel": "^35.0.2"
   }
 }
