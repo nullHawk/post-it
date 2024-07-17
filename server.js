@@ -19,6 +19,7 @@ const io = require("socket.io")(httpServer, {
   cors: {
     origin: ["http://localhost:3000", "https://post-it-jt47.onrender.com/","https://nullhawk.github.io/post-it/", "https://nullhawk.github.io"], //to change with hosting url
   },
+  transports: ["websocket"],
 });
 
 io.use(authSocket);
