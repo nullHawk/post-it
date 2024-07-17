@@ -1,5 +1,4 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const path = require("path");
@@ -9,6 +8,7 @@ const posts = require("./routes/posts");
 const users = require("./routes/users");
 const comments = require("./routes/comments");
 const messages = require("./routes/messages");
+const connectToDatabase = require("./db");
 const PostLike = require("./models/PostLike");
 const Post = require("./models/Post");
 
@@ -24,13 +24,15 @@ const io = require("socket.io")(httpServer, {
 io.use(authSocket);
 io.on("connection", (socket) => socketServer(socket));
 
-mongoose.connect(
-  process.env.MONGO_URI,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  () => {
-    console.log("MongoDB connected");
-  }
-);
+// mongoose.connect(
+//   process.env.MONGO_URI,
+//   { useNewUrlParser: true, useUnifiedTopology: true },
+//   () => {
+//     console.log("MongoDB connected");
+//   }
+// );
+
+connectToDatabase();
 
 httpServer.listen(process.env.PORT || 4000, () => {
   console.log("Listening");
