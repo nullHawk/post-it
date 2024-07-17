@@ -17,9 +17,8 @@ dotenv.config();
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["http://localhost:3000", "https://post-it-jt47.onrender.com/","https://nullhawk.github.io/post-it/", "https://nullhawk.github.io"], //to change with hosting url
+    origin: ["http://localhost:3000", "https://post-it-jt47.onrender.com/","https://nullhawk.github.io/post-it/", "https://nullhawk.github.io","https://nullhawk-post-it.netlify.app"], //to change with hosting url
   },
-  transports: ["websocket", "polling"] 
 });
 
 io.use(authSocket);

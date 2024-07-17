@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage":"https://nullhawk.github.io/post-it/",
+  "homepage":"https://nullhawk-post-it.netlify.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +23,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -48,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://post-it-jt47.onrender.com/"
+  "proxy": "https://post-it-jt47.onrender.com"
 }
