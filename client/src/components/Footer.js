@@ -10,7 +10,7 @@ const Footer = () => {
         <Typography variant="subtitle1">
           Don't forget to star the{" "}
           <a
-            href=""
+            href="https://github.com/nullHawk/post-it"
             target="_blank"
           >
             Repo

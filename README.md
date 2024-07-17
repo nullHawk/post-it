@@ -23,7 +23,7 @@ Deployed at:
 ## Installation and usage
 1) Clone this repository  
 ```
-git clone 
+git clone https://github.com/nullHawk/post-it
 ```
 2) Install dependencies  
 ```
