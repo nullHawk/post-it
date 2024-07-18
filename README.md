@@ -1,7 +1,7 @@
 # PostIt
 PostIt is a fully-featured social media web application, built with the MERN stack.  
 
-Deployed at: (Post It)[https://nullhawk-post-it.netlify.app/]
+Deployed at: https://nullhawk-post-it.netlify.app/
 
 
 ## Features
