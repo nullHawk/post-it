@@ -27,7 +27,7 @@ git clone https://github.com/nullHawk/post-it
 ```
 2) Install dependencies  
 ```
-cd social-media-app  
+cd post-it  
 npm install
 cd client
 npm install
